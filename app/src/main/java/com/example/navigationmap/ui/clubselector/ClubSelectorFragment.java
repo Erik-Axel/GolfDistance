@@ -44,6 +44,8 @@ public class ClubSelectorFragment extends Fragment {
         rvClubs.setLayoutManager(layoutManager);
         rvClubs.setAdapter(clubAdapter);
 
+        // test git comment
+
         initFab(root);
         //getStoredClubs();
         setupFakeClubs();
