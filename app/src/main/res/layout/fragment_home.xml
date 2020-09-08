@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MainActivity" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_more_vert_24px" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSetMarker"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="40dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/ic_location_on_24px"
+        android:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMeasure"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="40dp"
+        android:src="@drawable/ic_open_in_full_24px"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="125dp"
+        android:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCameraMove"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="40dp"
+        android:src="@drawable/ic_near_me_disabled_24px"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="175dp"
+        android:visibility="visible" />
+
+</com.google.android.gms.maps.MapView>
